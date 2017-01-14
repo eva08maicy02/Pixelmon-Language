@@ -102,7 +102,7 @@ item.luxury_ball_lid.name=豪華球蓋
 item.heal_ball_lid.name=治癒球蓋
 item.dusk_ball_lid.name=黑暗球蓋
 item.premier_ball_lid.name=紀念球蓋
-item.quick_ball_lid.name=超速球蓋
+item.quick_ball_lid.name=先機球蓋
 item.lure_ball_lid.name=誘餌球蓋
 item.sport_ball_lid.name=競賽球蓋
 item.poke_ball_disc.name=精靈球片
@@ -124,7 +124,7 @@ item.luxury_ball_disc.name=豪華球片
 item.heal_ball_disc.name=治癒球片
 item.dusk_ball_disc.name=黑暗球片
 item.premier_ball_disc.name=紀念球片
-item.quick_ball_disc.name=超速球片
+item.quick_ball_disc.name=先機球片
 item.lure_ball_disc.name=誘餌球片
 item.sport_ball_disc.name=競賽球片
 item.iron_disc.name=鐵球片
@@ -319,7 +319,7 @@ item.shiny_stone_shard.name=光之石碎片
 item.ever_stone.name=不變之石
 item.lucky_egg.name=幸運蛋
 item.exp_share.name=學習裝置
-item.exp_all.name=Exp. All
+item.exp_all.name=學習裝置(第六世代起)
 item.choice_band.name=講究頭帶
 item.choice_scarf.name=講究圍巾
 item.choice_specs.name=講究眼鏡
@@ -348,6 +348,7 @@ item.reaper_cloth.name=靈界之布
 item.deep_sea_scale.name=深海鱗片
 item.deep_sea_tooth.name=深海之牙
 item.oval_stone.name=渾圓之石
+item.soul_dew.name=心之水滴
 item.up-grade.name=升級資料
 item.razor_fang.name=銳利之牙
 item.dragon_scale.name=龍之鱗片
@@ -3679,7 +3680,7 @@ pixelmon.command.teach.knowsmove=%s的%s已經知道%s！
 pixelmon.command.teach.nomove=%s不是一個招式！
 pixelmon.command.teach.nothing=%s has nothing in that slot!
 pixelmon.command.teach.sentmove=%s的%s正在學習%s。
-pixelmon.command.teach.slot=Slot number must be between 1 and 6.
+pixelmon.command.teach.slot=請輸入指定的的隊伍順位，必須是數字1~6之間。
 pixelmon.command.unlock=Successfully unlocked %s's locked Pokémon.
 pixelmon.command.warpplate.notstanding=您沒有站在傳送板上面。
 pixelmon.command.warpplate.set=設定傳送板為通往%s。
@@ -3760,9 +3761,9 @@ pixelmon.entitytrainer.onceplayer=這個訓練師只能與每個玩家對戰一�
 pixelmon.entitytrainer.level=Lv:
 pixelmon.entitytrainer.winnings=您贏得了數量%s的錢，因為您擊敗了%s！
 
-pixelmon.statue.despawn=寶可夢的生成已經被停止。
+trainer.edit.opwarning=您沒有編輯NPC的權限。
 
-pixelmon.statue.despawn=寶可夢已經產生。
+pixelmon.statue.despawn=寶可夢已經被擊敗。
 
 pixelutilities.blocks.emptygift=您找到了一個空的%s。
 pixelmon.blocks.fillmefirst=您必須先把寶可夢放進去！
@@ -3779,8 +3780,8 @@ pixelmon.blocks.custompokegift=自訂寶可夢禮物
 pixelmon.pokeballs.inbattle=那隻寶可夢正在處於對戰中！
 pixelmon.pokeballs.alreadyown=您不能收服這隻寶可夢，因為牠已經被您收服了！
 pixelmon.pokeballs.boss=您不能收服Boss寶可夢！
-pixelmon.pokeballs.throw=%s投擲%s！
-pixelmon.pokeballs.capture=您收服了%s。
+pixelmon.pokeballs.throw=%s使用了%s！
+pixelmon.pokeballs.capture=太好了！捉到%s了！
 pixelmon.pokeballs.brokefree=%s掙脫了！
 pixelmon.pokeballs.pokeinbattle=您不能收服這隻寶可夢，因為某人正在與牠對戰！
 pixelmon.pokeballs.otherspokemon=您不能收服別人的寶可夢！
@@ -3892,9 +3893,9 @@ pixelmon.blocks.gymsign.ownership=這個道館標誌不是您的。
 
 pixelmon.orb.amountfull=您還需要擊敗%d隻寶可夢才能完成這顆珠子！
 pixelmon.orb.isfull=這顆珠子已經完成！
-pixelmon.items.expallon=已經裝上 Exp. All。
-pixelmon.items.expalloff=已經卸下 Exp. All。
 
+pixelmon.items.expallon=已經裝上學習裝置(第六世代起)。
+pixelmon.items.expalloff=已經卸下學習裝置(第六世代起)。
 
 //Achievements
 achievement.ItemFinderChieve=獎勵道具獵人！
@@ -4133,10 +4134,10 @@ pixelmon.ranch.maxaffection=%s對%s的愛已經到達頂點！
 *   "$a" was a one time occurrence which stands for enabled or disabled
 *   depending on what instance to call on.
 */
-gui.guiEvolve.huh=什麼!!!?
-gui.guiEvolve.evolve=我的$p要進化了??!
-gui.guiEvolve.done=$p進化成$n了!
-gui.guiEvolve.cancel=進化被終止了!
+gui.guiEvolve.huh=... ...哦！？
+gui.guiEvolve.evolve=$p的樣子... ...！
+gui.guiEvolve.done=恭喜！$p進化為$n了！
+gui.guiEvolve.cancel=咦...？變化停止了！
 
 gui.guiItemDrops.beatBossPixelmon1=您擊敗了Boss $p！
 gui.guiItemDrops.beatTrainer1=您擊敗了訓練家！
@@ -4188,7 +4189,7 @@ gui.acceptdeny.accept=接受
 gui.acceptdeny.deny=拒絕
 gui.acceptdeny.single=單打對戰
 gui.acceptdeny.double=二對二對戰
-gui.acceptdeny.invaliddouble=%s沒有足夠的時寶可夢來進行二對二對戰！
+gui.acceptdeny.invaliddouble=目前%s的身上沒有足夠的寶可夢來進行二對二對戰！
 
 gui.renamePoke.Reset=重置
 gui.renamePoke.cancel=取消
@@ -4318,9 +4319,9 @@ gui.pokemoneditor.reset=重來
 gui.pokemoneditor.cancel=取消
 gui.pokemoneditor.errorimport=匯入失敗
 gui.pokemoneditor.notallowedserver=您不被允許使用寶可夢編輯器。
-gui.pokemoneditor.notallowedplayer=%s不被允許使用寶可夢編輯器。
+gui.pokemoneditor.notallowedplayer=%s不允許寶可夢被編輯。
 gui.pokemoneditor.editedplayer=%s正在編輯您的寶可夢。
-gui.pokemoneditor.cancelediting=%s取消了您的編輯。
+gui.pokemoneditor.cancelediting=%s終止了您的編輯動作。
 
 gui.overlay1v1.lv=Lv. 
 
@@ -4432,6 +4433,7 @@ enum.nature.timid=膽小
 
 enum.statuetex.originaltexture=正常
 enum.statuetex.shiny=異色
+enum.statuetex.special=特殊
 enum.statuetex.stone=石
 enum.statuetex.gold=金
 enum.statuetex.bronze=銅
@@ -4462,7 +4464,7 @@ gui.battle.description=描述
 gui.battle.accuracy=命中率
 gui.battle.power=傷害
 gui.battle.back=返回
-gui.battle.whatdo=要讓$p做什麼呢?
+gui.battle.whatdo=$p正在等待您的指示
 gui.battle.type=屬性: 
 
 gui.levelupscreen.lvlup=$p升級為LV$l了！
@@ -4471,7 +4473,7 @@ gui.mainmenu.fight=戰鬥
 gui.mainmenu.bag=包包
 gui.mainmenu.pokemon=寶可夢
 gui.mainmenu.run=逃走
-gui.mainmenu.whatdo=要讓$p做什麼？
+gui.mainmenu.whatdo=$p正在等待您的指示
 gui.mainmenu.cantswitch=現在不能夠切換寶可夢！
 gui.mainmenu.traped=$p被困住了！現在不能夠逃跑！
 gui.mainmenu.trainer=您不能夠避開訓練師的戰鬥！
@@ -4521,7 +4523,7 @@ gui.ranch.empty=牧場內沒有寶可夢
 ranch.hourglass.upgradedall=所有牧場裡寶可夢的感情階段都提升了一個等級！
 ranch.hourglass.upgrade=%s的感情階段提升了一個等級！
 
-gui.trader.eggDescription=我不知道這會孵化成...
+gui.trader.eggDescription=我不知道這會孵化成甚麼...
 
 gui.spectate.spectateMessage=按下$l去旁觀$p的對戰。
 gui.spectate.stopspectate=停止旁觀
@@ -4558,7 +4560,7 @@ trainer.model.santa=聖誕老人
 trainer.model.suit=西裝
 trainer.model.scottish=蘇格蘭人
 trainer.model.prisoner=囚犯
-trainer.model.youngster1=被寵壞的小鬼
+trainer.model.youngster1=屁孩
 trainer.model.youngster2=頑酷少年
 trainer.model.youngster3=叛逆期的少年
 trainer.model.youngster4=藍色連帽男孩
@@ -4681,17 +4683,17 @@ nbt.hp2.name=血量
 */
 
 battlecontroller.escaped=%s逃跑了！
-battlecontroller.!escaped=%s沒能逃跑！
-battlecontroller.initbattle.you=與%s進行戰鬥！
+battlecontroller.!escaped=%s試圖逃跑但是逃跑失敗！
+battlecontroller.initbattle.you=與%s進行寶可夢對戰！
 battlecontroller.initbattle.toyou=您遭遇了%s！
 battlecontroller.flinched=%s感到退縮！
-battlecontroller.fainted=您的%s失去戰鬥能力！
-battlecontroller.hasfainted=%s失去戰鬥能力！
+battlecontroller.fainted=您的%s倒下了！
+battlecontroller.hasfainted=%s倒下了！
 battlecontroller.outofpokemon=您已經沒有能夠戰鬥的寶可夢了！
-battlecontroller.sendout=%s放出了%s！
+battlecontroller.sendout=%s派出了%s！
 battlecontroller.switch=請選擇其他寶可夢來繼續進行戰鬥！
 battlecontroller.targets=請為$a選擇目標。
-battlecontroller.win=您已經贏得了這場戰鬥！
+battlecontroller.win=您已經贏得了這場對戰！
 battlecontroller.afktimer=轉動計時器：
 battlecontroller.forfeitask=您要棄權嗎？
 battlecontroller.forfeit=%s棄權了！
@@ -5319,7 +5321,7 @@ pixelmon.battletext.supereffectivetarget=這對%s效果非常顯著！
 pixelmon.battletext.missedattack=%s嘗試使出%s，但是沒有命中！
 pixelmon.battletext.butmovefailed=但是出招失敗！
 pixelmon.battletext.used=%s使出了%s！
-pixelmon.battletext.sentout=%s放出了%s！
+pixelmon.battletext.sentout=%s派出了%s！
 
 pixelmon.effect.regainedenergy=%s重獲能量！
 pixelmon.effect.atedreams=%s吃掉了%s的夢！
@@ -5804,6 +5806,7 @@ pixelmon.config.timedLootReuseSeconds=重複使用的冷卻時間
 
 pixelmon.config.scaleGrassBattles=從Pixelmon草叢出現的野生寶可夢等級
 pixelmon.config.blocksHaveLegendaries=允許傳說寶可夢從Pixelmon草叢生成
+pixelmon.config.useExternalBlockSpawnFiles=Use external block spawn files
 pixelmon.config.pokeGiftReusable=寶可夢禮物球可以重複使用
 pixelmon.config.pokeGiftHaveEvents=啟用寶可夢禮物球
 pixelmon.config.eventPokeGiftLoad=啟用生成寶可夢禮物球
@@ -6053,6 +6056,7 @@ pixelmon.config.maxMusicDelay.comment=前一個背景音樂結束後，最慢多
 
 pixelmon.config.scaleGrassBattles.comment=根據玩家的隊伍平均等級，來決定從Pixelmon草叢出現的野生寶可夢等級。
 pixelmon.config.blocksHaveLegendaries.comment=設定是否允許傳說寶可夢從Pixelmon草叢生成。
+pixelmon.config.useExternalBlockSpawnFiles.comment=Use external block spawn files.
 pixelmon.config.pokeGiftReusable.comment=設定是否允許複數玩家可以從寶可夢禮物球得到寶可夢。
 pixelmon.config.pokeGiftHaveEvents.comment=設定是否允許使用寶可夢禮物球(包括放入和使用、放置無用的禮品盒)
 pixelmon.config.eventPokeGiftLoad.comment=設定是否允許寶可夢禮物球生成。
@@ -6165,7 +6169,7 @@ item.Luxury Ball.name=豪華球
 item.Heal Ball.name=治癒球
 item.Dusk Ball.name=黑暗球
 item.Park Ball.name=公園球
-item.Quick Ball.name=超速球
+item.Quick Ball.name=先機球
 item.Lure Ball.name=誘餌球
 item.Sport Ball.name=競賽球
 item.Cherish Ball.name=貴重球
@@ -6190,7 +6194,7 @@ item.Luxury Ball Lid.name=豪華球蓋
 item.Heal Ball Lid.name=治癒球蓋
 item.Dusk Ball Lid.name=黑暗球蓋
 item.Premier Ball Lid.name=紀念球蓋
-item.Quick Ball Lid.name=超速球蓋
+item.Quick Ball Lid.name=先機球蓋
 item.Lure Ball Lid.name=誘餌球蓋
 item.Sport Ball Lid.name=競賽球蓋
 item.Poke Ball Disc.name=精靈球片
@@ -6212,7 +6216,7 @@ item.Luxury Ball Disc.name=豪華球片
 item.Heal Ball Disc.name=治癒球片
 item.Dusk Ball Disc.name=黑暗球片
 item.Premier Ball Disc.name=紀念球片
-item.Quick Ball Disc.name=超速球片
+item.Quick Ball Disc.name=先機球片
 item.Lure Ball Disc.name=誘餌球片
 item.Sport Ball Disc.name=競賽球片
 item.Iron Disc.name=鐵球片
